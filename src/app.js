@@ -36,7 +36,7 @@ bot.on("message", async msg => {
   const metadata = await getSongMetadata(songUrl);
   const songs = await searchSongs(metadata);
 
-  const result = songs.join("\\n\\n") || "Nothing Found 🤷‍♂️";
+  const result = songs.slice(0, 2).join("\n") || "Nothing Found 🤷‍♂️";
   // send a message to the chat acknowledging receipt of their message
   bot.sendMessage(chatId, result);
 });
