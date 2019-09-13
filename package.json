@@ -1,0 +1,26 @@
+{
+  "name": "t_bot_google_play",
+  "version": "1.0.0",
+  "description": "Bot to convert Apple Music links to Google Play music",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo Build Step"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "jsdom": "^15.1.1",
+    "node-soundcloud": "0.0.6",
+    "node-telegram-bot-api": "^0.30.0",
+    "request": "^2.88.0"
+  },
+  "engines": {
+    "node": "10.3.0"
+  },
+  "now": {
+    "engines": {
+      "node": "10.3.0"
+    }
+  }
+}
