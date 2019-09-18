@@ -14,7 +14,7 @@ exports.searchSongs = params => {
       {
         q: query
       },
-      (err, tracks) => {
+      (err, tracks = []) => {
         if (err) {
           reject(err);
         }
